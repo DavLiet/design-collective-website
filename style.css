@@ -1,0 +1,86 @@
+p,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Barlow", sans-serif;
+}
+html {
+  background-color: #e5e5e5;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+body {
+  display: grid;
+  grid-template-rows: 1fr 4fr 3fr 3fr 2fr 1fr;
+}
+
+#navbar {
+  grid-row-start: 1;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+}
+#navbar-title {
+  grid-column-start: 1;
+  text-align: left;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+#navbar-message {
+  grid-column-start: 3;
+  text-align: right;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+#calltoaction {
+  grid-row-start: 2;
+  text-align: center;
+}
+#calltoaction:p {
+  color: #4f4f4f;
+}
+
+#description {
+  grid-row-start: 3;
+}
+
+#students {
+  grid-row-start: 4;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr;
+}
+
+#students > h1 {
+  text-align: center;
+}
+#students > div {
+  grid-row-start: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 0.1fr 0.6fr 0.3fr;
+  /* margin: 10px; */
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
+
+.card > img {
+  width: 89px;
+  height: 102px;
+}
+.card > h3,
+.card > p {
+  margin: 20px;
+}
