@@ -6,7 +6,7 @@ h4 {
   font-family: "Barlow", sans-serif;
 }
 html {
-  background-color: #e5e5e5;
+  background-color: #f7f8fc;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 10px;
@@ -41,24 +41,72 @@ body {
 
 #calltoaction {
   grid-row-start: 2;
-  text-align: center;
+  margin: 0 auto;
 }
-#calltoaction:p {
+
+#calltoaction > h1 {
+  margin-left: 330px;
+  margin-right: 330px;
+
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 84px;
+  text-align: center;
+
+  color: #000000;
+}
+#calltoaction > p {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  /* Gray 2 */
+
   color: #4f4f4f;
 }
 
 #description {
   grid-row-start: 3;
+  margin: 0 auto;
+  width: 476px;
 }
 
+#description > h3 {
+  width: 93px;
+  height: 19px;
+  left: 482px;
+  top: 948px;
+
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#description > p {
+  line-height: 32px;
+  font-size: 16px;
+  font-weight: 500px;
+  font-style: normal;
+}
 #students {
   grid-row-start: 4;
   display: grid;
   grid-template-rows: 0.2fr 1fr;
+  margin-top: 100px;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 #students > h1 {
   text-align: center;
+  margin-bottom: 40px;
 }
 #students > div {
   grid-row-start: 2;
@@ -69,18 +117,40 @@ body {
 .card {
   border-radius: 10px;
   display: grid;
-  grid-template-rows: 0.1fr 0.6fr 0.3fr;
+  grid-template-rows: 1fr 3fr 2fr;
   /* margin: 10px; */
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   background-color: white;
+  margin: 0 auto;
 }
 
 .card > img {
-  width: 89px;
-  height: 102px;
+  margin: 0 auto;
 }
-.card > h3,
+
 .card > p {
   margin: 20px;
+}
+
+#footer {
+  grid-row-start: 6;
+  margin: 0 auto;
+}
+
+#footer > p {
+  text-align: center;
+}
+
+.cofounder {
+  display: inline;
+  margin: 0px 65px;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
 }
