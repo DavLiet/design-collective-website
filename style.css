@@ -14,7 +14,7 @@ html {
 }
 body {
   display: grid;
-  grid-template-rows: 1fr 4fr 3fr 3fr 2fr 1fr;
+  grid-template-rows: 0.5fr 2.5fr 2fr 1.5fr 1.5fr 0.5fr;
 }
 
 #navbar {
@@ -41,7 +41,7 @@ body {
 
 #calltoaction {
   grid-row-start: 2;
-  margin: 0 auto;
+  margin: auto;
 }
 
 #calltoaction > h1 {
@@ -57,22 +57,33 @@ body {
 
   color: #000000;
 }
-#calltoaction > p {
+#subtitle {
+  margin-left: 476px;
+  margin-right: 476px;
+
   font-family: Barlow;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
+  color: #4f4f4f;
+}
 
-  /* Gray 2 */
-
+#notifysubtitle {
+  margin-top: 100px;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 29px;
+  text-align: center;
   color: #4f4f4f;
 }
 
 #description {
   grid-row-start: 3;
-  margin: 0 auto;
+  margin: auto;
   width: 476px;
 }
 
@@ -99,7 +110,6 @@ body {
   grid-row-start: 4;
   display: grid;
   grid-template-rows: 0.2fr 1fr;
-  margin-top: 100px;
   margin-left: 300px;
   margin-right: 300px;
 }
@@ -165,12 +175,12 @@ body {
   width: 459px;
 }
 
-#contact > a {
+.notifybutton {
   background-color: #10182f;
   display: block;
   margin: auto;
   width: 80px;
-  padding: 20px 80px;
+  padding: 15px 50px;
   text-decoration: none;
   font-family: Barlow;
   font-style: normal;
@@ -182,17 +192,17 @@ body {
   border-radius: 4px;
 }
 
-#contact > form {
-  margin: 0 auto;
-}
-
 #footer {
   grid-row-start: 6;
-  margin: 0 auto;
+  margin: auto;
 }
 
 #footer > p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
   text-align: center;
+  color: #10182f;
 }
 
 .cofounder {
@@ -201,7 +211,7 @@ body {
 }
 .cofounder > a {
   text-decoration: none;
-  color: #000000;
+  color: #0069ff;
 }
 
 .dot {
