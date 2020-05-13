@@ -11,128 +11,146 @@ html {
   margin-right: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+
 }
 body {
-  display: grid;
-  grid-template-rows: 0.5fr 2.5fr 2fr 1.5fr 1.5fr 0.5fr;
+  height: auto;
+  /* this is the same as grid-template-columns: 1fr 1fr 1fr 1fr; */
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#grid {
 }
 
 #navbar {
-  grid-row-start: 1;
-  display: grid;
-  grid-template-columns: 0.5fr 1fr 0.5fr;
+height: 10vh;
 }
+
 #navbar-title {
-  grid-column-start: 1;
-  text-align: left;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #171717;
+  padding-left: 50px;
+  float: left;
 }
+
 #navbar-message {
-  grid-column-start: 3;
+  font-weight: 500;
+  font-size: 16px;
+  color: #171717;
+  position: relative;
   text-align: right;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
+  float: right;
+  padding-right: 40px;
 }
 
 #calltoaction {
-  grid-row-start: 2;
   margin: auto;
+  /* height: 100vh; */
 }
 
 #calltoaction > h1 {
-  margin-left: 330px;
-  margin-right: 330px;
-
-  font-family: Barlow;
   font-style: normal;
   font-weight: bold;
   font-size: 70px;
   line-height: 84px;
   text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
 
-  color: #000000;
 }
 #subtitle {
-  margin-left: 476px;
-  margin-right: 476px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
 
+  /* Gray 2 */
+  color: #4F4F4F;
+}
+
+#notify-div {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+#notifysubtitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #171717;
+  top: 124px;
+}
+
+#description {
+  width: 35vw;
+  position: relative;
+  margin: 0 auto;
+  bottom: 10vh;
+}
+
+#description > h3 {
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+
+  /* Gray 2 */
+
+  color: #4F4F4F;
+}
+
+#description > p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  /* or 200% */
+  color: #000000;
+}
+
+#students {
+  width: 80vw;
+  position: relative;
+  margin: 0 auto;
+  top: 10vh;
+}
+
+#students > h1 {
   font-family: Barlow;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
+  /* identical to box height */
   text-align: center;
-  color: #4f4f4f;
-}
-
-#notifysubtitle {
-  margin-top: 100px;
-  font-family: Barlow;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 29px;
-  text-align: center;
-  color: #4f4f4f;
-}
-
-#description {
-  grid-row-start: 3;
-  margin: auto;
-  width: 476px;
-}
-
-#description > h3 {
-  width: 93px;
-  height: 19px;
-  left: 482px;
-  top: 948px;
-
-  font-family: Barlow;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-}
-
-#description > p {
-  line-height: 32px;
-  font-size: 16px;
-  font-weight: 500px;
-  font-style: normal;
-}
-#students {
-  grid-row-start: 4;
-  display: grid;
-  grid-template-rows: 0.2fr 1fr;
-  margin-left: 300px;
-  margin-right: 300px;
-}
-
-#students > h1 {
-  text-align: center;
-  margin-bottom: 40px;
 }
 #students > div {
-  grid-row-start: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card {
+  width: 300px;
+  height: 300px;
+  left: 0px;
+  top: 0px;
+  display: block;
+  background: #FEFEFE;
   border-radius: 10px;
-  display: grid;
-  grid-template-rows: 1fr 3fr 2fr;
-  /* margin: 10px; */
-  width: 250px;
-  height: 250px;
-  background-color: white;
-  margin: 0 auto;
+}
+
+.card-container {
+  display: inline-block;
+  padding: 10px;
+  width: 30%;
 }
 
 .card > img {
@@ -144,8 +162,12 @@ body {
 }
 
 #contact {
-  grid-row-start: 5;
   margin: 100px auto;
+  position: relative;
+  padding-top: 5vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 #contact > * {
@@ -155,24 +177,26 @@ body {
 }
 
 #contact > h1 {
-  margin-left: 470px;
-  margin-right: 470px;
-  width: 498px;
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
+  /* identical to box height */
+
+  text-align: center;
 }
 
 #contact > p {
-  margin-left: 470px;
-  margin-right: 470px;
-  font-family: Barlow;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #4f4f4f;
-  width: 459px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  line-height: 20px;
+  padding-bottom: 25px;
+  /* Gray 2 */
+
+  color: #4F4F4F;
 }
 
 .notifybutton {
@@ -193,13 +217,26 @@ body {
 }
 
 #footer {
-  grid-row-start: 6;
+  margin: 0;
+  padding-bottom: 20px;
+  height: 122px;
+}
+
+.divider {
+  border: 1px solid #E0E0E0;
+  width: 90%;
+  display: block;
   margin: auto;
+}
+
+#cofounder-title {
+  font-weight: 600;
+  text-align: center;
 }
 
 #footer > p {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 17px;
   text-align: center;
   color: #10182f;
@@ -207,11 +244,23 @@ body {
 
 .cofounder {
   display: inline;
-  margin: 0px 65px;
+  margin: 0px 40px;
+  font-weight: 500;
+  color: #4F4F4F;
 }
 .cofounder > a {
-  text-decoration: none;
-  color: #0069ff;
+  color: #4F4F4F;
+  text-decoration: underline;
+}
+
+#cofounders {
+  text-align: center;
+}
+
+#cofounder-container {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 40px;
 }
 
 .dot {
@@ -221,3 +270,112 @@ body {
   border-radius: 50%;
   display: inline-block;
 }
+
+/* Grow */
+.hvr-grow {
+    display: block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.05);
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width: 600px) {
+  body {
+    /* background-color: lightblue; */
+  }
+  .grid {
+    position: absolute;
+  }
+
+  #navbar {
+    height: 10vh
+  }
+
+  #navbar-title {
+    padding-left: 0px;
+  }
+
+  #navbar-message {
+    padding: 0;
+  }
+
+  #calltoaction > h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  #subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  #notify-div {
+    height: 300px;
+    width: 300px;
+    top: 40px;
+  }
+
+  #description {
+    width: 100%;
+    margin: 8px;
+  }
+
+  #description > h3 {
+    text-align: center;
+  }
+
+  #students {
+    top: 0vh;
+  }
+
+  .card-container {
+    display: block;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+  }
+
+  #contact {
+    margin: 50px auto;
+    padding-top: 0vh;
+  }
+
+  #contact > p {
+    width: 100%;
+    padding-bottom: 16px;
+  }
+
+  #footer {
+    height: 80px
+  }
+
+  #cofounder-container {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .cofounder {
+    margin: 0;
+  }
+
+  .divider {
+    width: 100%;
+  }
