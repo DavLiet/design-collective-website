@@ -3,7 +3,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Barlow", sans-serif;
+  font-family: "Khula", sans-serif;
 }
 html {
   background-color: #f7f8fc;
@@ -18,6 +18,11 @@ body {
   /* this is the same as grid-template-columns: 1fr 1fr 1fr 1fr; */
   max-width: 100%;
   overflow-x: hidden;
+}
+
+#logo {
+  max-width: 20%;
+  padding: 1rem;
 }
 
 #grid {
@@ -42,7 +47,7 @@ height: 10vh;
   position: relative;
   text-align: right;
   float: right;
-  padding-right: 40px;
+  padding: 1rem 1.5rem;
 }
 
 #calltoaction {
@@ -126,7 +131,7 @@ height: 10vh;
 }
 
 #students > h1 {
-  font-family: Barlow;
+  font-family: Khula;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -206,7 +211,7 @@ height: 10vh;
   width: 80px;
   padding: 15px 50px;
   text-decoration: none;
-  font-family: Barlow;
+  font-family: Khula;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
